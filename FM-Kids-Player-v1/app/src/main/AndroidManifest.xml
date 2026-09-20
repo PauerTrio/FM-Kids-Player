@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <application
+        android:allowBackup="true"
+        android:label="FM Kids Player"
+        android:theme="@style/Theme.FMKids"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorLandscape"
+            android:exported="true">
+            <!-- Normales App-Icon -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <!-- Optional als Standard-Startbildschirm/Launcher auswählbar.
+                 Damit landet das S20 FE nach dem Hochfahren direkt im Kids Player. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

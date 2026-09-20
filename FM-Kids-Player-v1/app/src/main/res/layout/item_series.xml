@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:background="@drawable/card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/fallback"
+            android:text="▶"
+            android:textSize="64sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:maxLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
